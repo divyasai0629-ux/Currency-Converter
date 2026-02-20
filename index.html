@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="number" id="user-amount" value="1" min="1">
+            </div>
+
+            <div class="dropdown-wrapper">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="From Flag">
+                        <select name="from"></select>
+                    </div>
+                </div>
+
+                <div class="swap-icon">⇌</div>
+
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="To Flag">
+                        <select name="to"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg">Enter amount to convert...</div>
+
+            <button type="submit" id="get-rate-btn">Get Exchange Rate</button>
+        </form>
+    </main>
+
+    <script src="countries.js"></script>
+    <script src="currency.js"></script>
+</body>
+</html>
